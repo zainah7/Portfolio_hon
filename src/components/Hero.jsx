@@ -9,7 +9,7 @@ const Hero = () => {
     <>
       <div className="overflow-hidden">
         <div>
-          <img src={hero} alt="hero" className="w-full h-full" />
+          <img src={hero} alt="hero" className="bg-cover h-[100vh] w-full" />
           <div className="overlay absolute inset-0 bg-gray-900 opacity-40"></div>
         </div>
         <div className="absolute  top-1/3 left-48 flex justify-between">
