@@ -1,4 +1,9 @@
-import React from "react";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+
 import apple from "../assets/apple.png";
 import atom from "../assets/atom.png";
 import blackberry from "../assets/blackberry.png";
@@ -7,68 +12,109 @@ import envato from "../assets/envato.png";
 import firefox from "../assets/firefox.png";
 import joomla from "../assets/joomla.png";
 import magento from "../assets/magento.png";
-import user1 from "../assets/user-01.jpg";
-import user2 from "../assets/user-02.jpg";
-import user3 from "../assets/user-05.jpg";
+import Slide from './Slide';
+
+
+
+
 
 const OurClient = () => {
-  const clients = [
+  const images = [
     {
       id: 1,
-      text: "Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.",
-      img: <img src={user1} alt="" />,
-      name: "Tim Cook",
-      job: "CEO Apple",
+      imgSrc: apple,
+      alt: "Apple",
     },
     {
       id: 2,
-      text: "Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.",
-      img: <img src={user2} alt="" />,
-      name: "Satya Nadella",
-      job: "CEO Microsoft",
+      imgSrc: atom,
+      alt: "Atom",
     },
     {
       id: 3,
-      text: "Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.",
-      img: <img src={user3} alt="" />,
-      name: "Sundar Pichai",
-      job: "CEO Google",
+      imgSrc: blackberry,
+      alt: "Blackberry",
+    },
+    {
+      id: 4,
+      imgSrc: dropbox,
+      alt: "Dropbox",
+    },
+    {
+      id: 5,
+      imgSrc: envato,
+      alt: "Envato",
+    },
+    {
+      id: 6,
+      imgSrc: firefox,
+      alt: "Firefox",
+    },
+    {
+      id: 7,
+      imgSrc: joomla,
+      alt: "Joomla",
+    },
+    {
+      id: 8,
+      imgSrc: magento,
+      alt: "Magento",
     },
   ];
+
+
+
   return (
-    <>
-      <div className="bg-slate-100 w-full h-screen flex flex-col justify-center items-center space-y-20">
+    <div className="bg-slate-100 w-full h-[150vh] flex flex-col justify-center items-center space-y-20">
         <div className="w-1/2 text-center">
           <h2 className="text-xl text-green-500 font-semibold">OUR CLIENTS</h2>
-          <h1 className="text-7xl font-semibold ">
+          <h1 className="text-7xl font-semibold">
             Logo has been honored to partner up with these clients
           </h1>
         </div>
+      <Swiper
+        slidesPerView={5}
+        spaceBetween={5}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 100,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        }}
+        modules={[Pagination, Autoplay, EffectFade]}
+        className="mySwiper"
+        
+      >
         <div className="flex justify-center items-center">
-          <img src={apple} alt="" className="w-36 h-36" />
-          <img src={atom} alt="" className="w-36 h-36" />
-          <img src={blackberry} alt="" className="w-36 h-36" />
-          <img src={dropbox} alt="" className="w-36 h-36" />
-          <img src={envato} alt="" className="w-36 h-36" />
-          <img src={firefox} alt="" className="w-36 h-36" />
-          <img src={joomla} alt="" className="w-36 h-36" />
-          <img src={magento} alt="" className="w-36 h-36" />
-        </div>
-        <hr className="bg-gray-200 w-1/2 h-1" />
-        <div className="flex flex-col justify-center items-center">
-          {clients.map(({ id, text, img, name, job }) => (
-            <div key={id} className={``}>
-              <div>{text}</div>
-              <div>
-                <h1 className="mt-4">{img}</h1>
-                <p>{name}</p>
-                <p>{job}</p>
+          {images.map(({ id, imgSrc, alt }) => (
+            <SwiperSlide key={id}>
+              <div className="">
+                <img src={imgSrc} alt={alt} className="w-44 h-44" />
               </div>
-            </div>
+            </SwiperSlide>
           ))}
         </div>
-      </div>
-    </>
+      </Swiper>
+          <hr className="bg-gray-200 w-1/3 h-1" />
+          <div className='w-full mx-auto'>
+          <Slide />
+          </div>
+    </div>
   );
 };
 
