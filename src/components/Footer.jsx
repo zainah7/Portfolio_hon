@@ -1,16 +1,14 @@
 import React from "react";
-import { BiEnvelope } from "react-icons/bi";
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black w-full h-[70vh] flex justify-center items-center">
-        <div>
-          <div className="flex flex-col">
-            <h1 className="font-bold text-3xl text-green-500 ">Logo.</h1>
-          </div>
-          <div className="text-gray-400">
-            <p>
+      <footer className="bg-[#111111] p-5">
+        <div className="w-full h-[70vh] flex justify-center items-center px-10">
+        <div className="flex flex-col">
+          <div className="text-gray-400 w-1/2 mx-auto">
+          <h1 className="font-bold text-3xl text-green-500 ">Logo.</h1>
+            <p className="">
               Proin eget tortor risus. Mauris blandit aliquet elit, eget
               tincidunt nibh pulvinar a. Praesent sapien massa, convallis a
               pellentesque nec, egestas non nisi. Mauris blandit aliquet elit,
@@ -20,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col space-y-3 w-1/2">
           <div>
             <h2 className="text-white text-xl font-semibold ">Get Notified</h2>
           </div>
@@ -36,18 +34,15 @@ const Footer = () => {
               type="text"
               name="email"
               placeholder="Email Address"
-              className="bg-transparent w-full"
+              className="bg-transparent w-full px-2 text-white"
             />
-            <span>
-              <BiEnvelope />
-            </span>
-
             <button className="text-white bg-green-500 w-full">
               SUBSCRIBE
             </button>
           </div>
         </div>
-        <div className="flex text-gray-400">
+        </div>
+        <div className="flex text-gray-400 justify-center">
           <p>© Copyright Glint 2022</p>
           <p>Site Template by Colorlib</p>
         </div>

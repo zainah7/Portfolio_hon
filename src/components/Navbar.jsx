@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   return (
     <>
-      <div className=" absolute top-0 w-full container flex justify-between p-5">
+      <div className=" absolute top-0 w-full mx-auto flex justify-between items-center p-10">
         <div>
           <h1 className=" font-bold text-4xl  text-white">Logo</h1>
         </div>

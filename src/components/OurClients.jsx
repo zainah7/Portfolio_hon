@@ -65,7 +65,7 @@ const OurClient = () => {
 
 
   return (
-    <div className="bg-slate-100 w-full h-[150vh] flex flex-col justify-center items-center space-y-20">
+    <div className="bg-[#E6E6E6] w-full h-[150vh] flex flex-col justify-center items-center space-y-20">
         <div className="w-1/2 text-center">
           <h2 className="text-xl text-green-500 font-semibold">OUR CLIENTS</h2>
           <h1 className="text-7xl font-semibold">

@@ -10,16 +10,16 @@ import Services from "./components/Services";
 function App() {
   return (
     <div className="App">
-      <div>
+      <main>
         <Hero />
         <Navbar />
         <About />
         <Services />
-        <RecentWorks />
+        {/* <RecentWorks /> */}
         <OurClient />
         <ContactUs />
         <Footer />
-      </div>
+      </main>
     </div>
   );
 }

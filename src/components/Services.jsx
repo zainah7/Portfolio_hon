@@ -47,7 +47,6 @@ const Services = () => {
   ];
   return (
     <>
-      <div>
         <div className="flex flex-col justify-center space-y-5 my-10 items-center container mx-auto w-full h-screen">
           <div className="text-center leading-10 space-y-5">
           <h2 className="text-green-500 font-semibold text-xl">WHAT WE DO</h2>
@@ -69,7 +68,6 @@ const Services = () => {
             ))}
           </div>
         </div>
-      </div>
     </>
   );
 };
