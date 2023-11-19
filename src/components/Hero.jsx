@@ -14,7 +14,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute  top-1/3 left-48 flex justify-between items-center">
-          <div className=" text-white text-2xl space-y-10">
+          <div className=" text-white text-2xl space-y-10"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <h2 >WELCOME TO LOGO</h2>
             <h1 className="text-6xl w-[60%] font-semibold leading-relaxed">
               We are a creative group of people who design influential brands

@@ -47,10 +47,10 @@ const Slide = () => {
         modules={[Navigation,Mousewheel, Keyboard]}
         className="mySwiper"
       >
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           {clients.slice(0, 3).map(({ id, text, imgSrc, alt, name, job }) => (
-            <SwiperSlide key={id}>
-                <div className='space-y-10'>
+            <SwiperSlide  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine" key={id}>
+                <div className='space-y-10' >
 
               <p className=''>{text}</p>
               <img src={imgSrc} alt={alt} className=" mx-auto rounded-full"

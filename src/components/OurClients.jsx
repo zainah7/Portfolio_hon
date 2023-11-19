@@ -66,7 +66,7 @@ const OurClient = () => {
 
   return (
     <div className="bg-[#E6E6E6] w-full h-[150vh] flex flex-col justify-center items-center space-y-20">
-        <div className="w-1/2 text-center">
+        <div className="w-1/2 text-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <h2 className="text-xl text-green-500 font-semibold">OUR CLIENTS</h2>
           <h1 className="text-7xl font-semibold">
             Logo has been honored to partner up with these clients
@@ -97,13 +97,13 @@ const OurClient = () => {
           },
         }}
         modules={[Pagination, Autoplay, EffectFade]}
-        className="mySwiper"
+        className="mySwiper "  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine"
         
       >
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           {images.map(({ id, imgSrc, alt }) => (
             <SwiperSlide key={id}>
-              <div className="">
+              <div className="" >
                 <img src={imgSrc} alt={alt} className="w-44 h-44" />
               </div>
             </SwiperSlide>
