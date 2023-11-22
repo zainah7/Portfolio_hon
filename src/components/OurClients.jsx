@@ -65,10 +65,10 @@ const OurClient = () => {
 
 
   return (
-    <div className="bg-[#E6E6E6] w-full h-[150vh] flex flex-col justify-center items-center space-y-20">
-        <div className="w-1/2 text-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-          <h2 className="text-xl text-green-500 font-semibold">OUR CLIENTS</h2>
-          <h1 className="text-7xl font-semibold">
+    <div className="bg-[#E6E6E6] w-full md:h-[150vh] flex flex-col justify-center items-center space-y-20">
+        <div className="md:w-1/2 text-center"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+          <h2 className="text-xl text-green-500 font-semibold mt-10 md:mt-0">OUR CLIENTS</h2>
+          <h1 className="text-xl md:text-7xl font-semibold">
             Logo has been honored to partner up with these clients
           </h1>
         </div>
@@ -84,7 +84,7 @@ const OurClient = () => {
         }}
         breakpoints={{
           320: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 100,
           },
           768: {
@@ -104,7 +104,7 @@ const OurClient = () => {
           {images.map(({ id, imgSrc, alt }) => (
             <SwiperSlide key={id}>
               <div className="" >
-                <img src={imgSrc} alt={alt} className="w-44 h-44" />
+                <img src={imgSrc} alt={alt} className="md:w-44 md:h-44" />
               </div>
             </SwiperSlide>
           ))}

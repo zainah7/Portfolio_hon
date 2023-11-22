@@ -47,14 +47,14 @@ const Services = () => {
   ];
   return (
     <>
-        <div className="flex flex-col justify-center space-y-5 my-10 items-center container mx-auto w-full h-screen">
+        <div className="md:flex flex-col justify-center space-y-5 my-10 items-center container mx-auto w-full md:h-screen">
           <div className="text-center leading-10 space-y-5"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <h2 className="text-green-500 font-semibold text-xl">WHAT WE DO</h2>
-          <h1 className="font-bold text-4xl w-1/2 mx-auto">
+          <h1 className="font-bold text-2xl md:text-4xl md:w-1/2 mx-auto">
             We’ve got everything you need to launch and grow your business
           </h1>
           </div>
-          <div className="grid grid-cols-2 gap-10 " >
+          <div className="grid md:grid-cols-2 gap-10 " >
             {services.map(({ id, title, icon, text }) => (
               <div className="flex items-center justify-center space-x-4"   key={id}>
                 <div className="mb-14"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">

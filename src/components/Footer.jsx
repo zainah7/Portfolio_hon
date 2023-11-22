@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-[#111111] p-5">
-        <div className="w-full h-[70vh] flex justify-center items-center px-10">
+        <div className="w-full md:h-[70vh] md:flex justify-center items-center px-10">
         <div className="flex flex-col"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-          <div className="text-gray-400 w-1/2 mx-auto">
+          <div className="text-gray-400 md:w-1/2 mx-auto">
           <h1 className="font-bold text-3xl text-green-500 ">Logo.</h1>
             <p className="">
               Proin eget tortor risus. Mauris blandit aliquet elit, eget
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col space-y-3 w-1/2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+        <div className="flex flex-col space-y-3 md:w-1/2"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <div>
             <h2 className="text-white text-xl font-semibold ">Get Notified</h2>
           </div>

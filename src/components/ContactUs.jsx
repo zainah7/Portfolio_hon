@@ -6,15 +6,15 @@ import { FiTwitter, FiInstagram, FiFacebook } from "react-icons/fi";
 const ContactUs = () => {
   return (
     <>
-      <div className="bg-[#151515] h-[150vh] w-full">
+      <div className="bg-[#151515] md:h-[150vh] w-full">
         <div className="flex flex-col justify-center items-center pt-36 ">
           <h2 className="text-2xl text-green-500">CONTACT US</h2>
-          <h1 className="text-6xl text-white text-center font-bold">
+          <h1 className="text-xl md:text-6xl text-white text-center font-bold">
             Reach out for a new project or just say hello
           </h1>
         </div>
-        <div className="flex justify-center  p-20   mx-auto">
-          <div className="w-[50%] bg-[#111111] rounded-md  shadow-2xl">
+        <div className="md:flex justify-center p-5  md:p-20  space-y-10 md:space-y-0  mx-auto">
+          <div className="md:w-[50%] w-full bg-[#111111] rounded-md  shadow-2xl">
             <form class="w-full h-screen max-w-2xl p-10 space-y-10">
               <div class="flex items-center border-b border-[#39B54A] py-2">
                 <input
@@ -57,7 +57,7 @@ const ContactUs = () => {
             </form>
           </div>
 
-          <div className="w-[25%] bg-[#121212] rounded-md p-5 space-y-10  shadow-2xl ">
+          <div className="md:w-[25%] bg-[#121212] rounded-md p-5 space-y-10  shadow-2xl ">
             <div>
               <h2 className="text-white">CONTACT INFO</h2>
             </div>
